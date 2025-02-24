@@ -15,6 +15,7 @@ app.use(
       "http://localhost:5173",
       "https://food-sharing-fde2a.web.app",
       "https://food-sharing-fde2a.firebaseapp.com",
+      "https://bucolic-dango-3b417b.netlify.app",
     ],
     credentials: true,
   })
