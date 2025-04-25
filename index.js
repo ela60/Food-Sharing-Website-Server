@@ -166,7 +166,7 @@ async function run() {
       }
     });
 
-    //
+    
 
     // Delete Food
     app.delete("/myfoods/:id", async (req, res) => {
@@ -281,40 +281,7 @@ async function run() {
       }
   });
 
-    // app.post("/foods-request", async (req, res) => {
-    //   const { id } = req.body;
-    //   console.log(req.body);
-    //   const {
-    //     userEmail,
-    //     requestDate,
-    //     additionalNotes,
-    //     foodStatus,
-    //     ...otherDetails
-    //   } = req.body;
-    //   const requestCollection = await requestCollection.insertOne(req.body);
-
-    //   const food = await foodCollection.updateOne(
-    //     { _id: new ObjectId(id) },
-    //     {
-    //       $set: {
-    //         foodStatus: foodStatus,
-
-    //         updatedAt: new Date(),
-    //       },
-         
-    //     }, {
-    //       upsert:true,
-    //     }
-
-
-    //   );
-    //   // console.log(food);
-
-    //   if (!food.modifiedCount) {
-    //     return res.status(404).json({ message: "Food not found" });
-    //   }
-    //   return res.status(200).send(food);
-    // });
+    
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
